@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+
+html {
+    font-family: Tahoma, Verdana, sans-serif;
+    background-image: linear-gradient(hsl(219, 70%, 42%), hsl(114, 56%, 70%));
+    min-height: 100%;
+}
+
+header {
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    color: skyblue;
+    text-shadow: seagreen 2px 1px 3px;
+}
+
+label, legend, textarea {
+    margin: .25rem .5rem .25rem .5rem;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    display: block;
+    width: 95%;
+    margin: .25rem .5rem 1rem .5rem;
+}
+
+select {
+    margin: .25rem .5rem 1rem .5rem;
+    width: 97%;
+}
+
+main {
+    background-color: rgba(128, 17, 102, 0.583); 
+    width: 30rem;
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    border-radius: .5em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: inline;
+    margin-right: 2ch;
+    margin-bottom: inherit;
+    
+}
+
+fieldset {
+    border-style: none;
+    width: inherit;
+    margin: 0 -1.5ch;
+}
+
+textarea {
+    width: 95%;
+    resize: none;
+}
+
+input[type="submit"]{
+    margin: .25rem 12rem .25rem 12rem;
+    width: 4rem;
+    border-radius: .25rem;
+}
+
+input[type="submit"]:hover {
+    color:hsl(114, 71%, 23%);
+}
+
+input[type="submit"]:active {
+    color: hsl(1, 94%, 45%)
+}

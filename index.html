@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1>Feedback Survey</h1>
+        <p>Thank you for taking the time to complete this survey!</p>
+    </header>
+        <main>
+            <form action=""> <!--No Action Yet-->
+            <label for="name">Name</label>
+                <input  type="text" id="name" placeholder="First Last">
+            <label for="email">Email</label>
+                <input class="user-input" type="email" id="email" placeholder="xxx@email.com">
+            <label for="number">Age (Optional)</label>
+                <input type="number" name="number" min="12" max="100" >
+            <label for="dropdown">Which option best describes you?</label>
+                <select name="dropdown">
+                    <option default value="">Please select an option below</option>
+                    <option value="full-time-student">Full-Time Student</option>
+                    <option value="full-time-job">Full-Time Job</option>
+                    <option value="part-time-job">Part-Time Job</option>
+                    <option value="other">Other</option>
+                    <option value="no-say">Prefer Not to Say</option>
+                </select>
+            <!-- <p>Would You Recommend Our Site To Others?</p> -->
+            <Fieldset>
+                <legend>Would You Recommend Our Site To Others?</legend>
+                    <label for="definitely" >
+                        <input type="radio" name="feedback" id="definitely" value="definitely">Definitely
+                    </label><br>
+                    <label for="maybe">
+                        <input type="radio" name="feedback" id="maybe" value="maybe">Maybe
+                    </label><br>
+                    <label for="recommend">
+                        <input type="radio" name="feedback" id="recommend" value="no">Not At All
+                    </label>
+            </Fieldset>
+            <fieldset>
+                <legend>What Can We Improve?</legend>
+                    <label for="projects">
+                        <input type="checkbox" name="projects" id="projects">Projects
+                    </label><br>
+                    <label for="videos">
+                        <input type="checkbox" name="videos" id="videos">Videos
+                    </label><br>
+                    <label for="quizzes">
+                        <input type="checkbox" name="quizzes" id="quizzes">Quizzes
+                    </label>
+            </fieldset>
+            <label for="comments">Additional Comments...
+                <textarea name="comments" id="comments" rows="10" placeholder="Enter comments here..."></textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </main>
+    </form>
+</body>
+</html>
